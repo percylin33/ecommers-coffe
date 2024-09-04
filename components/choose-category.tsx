@@ -20,13 +20,12 @@ const ChooseCategory = () => {
                 <Link key={category.id} href={`/category/${category.attributes.slug}`}
                 className="relative max-w-xs mx-auto overflow-hidden bg-no-repeat bg-cover rounded-lg "
                 >
-                    <p>image</p>
-                    {/* <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${category.attributes.mainImage.data.attributes.url}`} alt={category.attributes.categoryName}
-                    className="max-w-[270px] transition duration-300 ease-in-out rounded-lg hover:scale-110" /> */}
+                    <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${category.attributes.mainImage.data.attributes.url}`} alt={category.attributes.categoriName}
+                    className="max-w-[270px] transition duration-300 ease-in-out rounded-lg hover:scale-110" />
                 </Link>
             ))
         )}
-
+        
     </div>
   </div>
   )
