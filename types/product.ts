@@ -7,15 +7,17 @@ export type ProductType = {
         active: boolean;
         isFeatured: boolean;
         taste: string;
-        origin:string;
-        price:number;
-        images:{
-            id:number;
-            attributes: {
-                url:string;
-            };
-        }[];
-    };
+        origin: string;
+        price: number;
+        images: {
+            data: {
+                id: number;
+                attributes: {
+                    url: string;
+                };
+            }[];
+        };
+    
     categoty: {
         data: {
             attributes: {
@@ -24,4 +26,5 @@ export type ProductType = {
             }
         }
     }
+};
 }
