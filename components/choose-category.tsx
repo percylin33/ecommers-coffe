@@ -4,6 +4,7 @@
 import { useGetCategories } from "@/api/getProducts"
 import Link from "next/link"
 import { ResponseType } from "@/types/response"
+import { CategoryType } from "@/types/category"
 
 
 
@@ -16,7 +17,7 @@ const ChooseCategory = () => {
     <h3 className="px-6 pb-4 text-3xl sm:pb-8">Elige tu categoria favorita</h3>
     <div className="grid gap-5 sm:grid-cols-3">
         {!loading && result != undefined && (
-            result.map((category:any) => (
+            result.map((category:CategoryType) => (
                 <Link key={category.id} href={`/category/${category.attributes.slug}`}
                 className="relative max-w-xs mx-auto overflow-hidden bg-no-repeat bg-cover rounded-lg "
                 >
