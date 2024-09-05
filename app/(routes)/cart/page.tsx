@@ -2,7 +2,7 @@
 
 const Page = () => {
   return <div>
-    dad
+    card
   </div>
 }
 
