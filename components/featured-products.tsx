@@ -9,13 +9,13 @@ import { ProductType } from "@/types/product"
 import { Card, CardContent } from "./ui/card"
 import IconButton from "./icon-button"
 import { useRouter } from "next/navigation"
+import { useCart } from "@/hooks/use-cart"
 
 const FeaturedProducts = () => {
   const {result, loading}: ResponseType = useGetFeaturedProducts()
 
   const router = useRouter();
-  console.log(result);
-  console.log(loading);
+  const {addItem} = useCart()
   
   return (
   <div className=" max-w-6xl py-4 mx-auto sm:py-10 sm:px-24">
@@ -41,7 +41,7 @@ const FeaturedProducts = () => {
                     <div className="absolute w-full px-6 transition duration-200 opacity-0 group-hover:opacity-100 bottom-5">
                       <div className="flex justify-center gap-x-6">
                         <IconButton onClick={() => router.push(`product/${slug}`)} icon = {<Expand size={20}/>} className="text-gray-600"/>
-                        <IconButton onClick={() => console.log("add iten")} icon = {<ShoppingCart size={20}/>} className="text-gray-600"/>
+                        <IconButton onClick={() => addItem(product)} icon = {<ShoppingCart size={20}/>} className="text-gray-600"/>
                       </div>
                     </div>
                   </CardContent>
