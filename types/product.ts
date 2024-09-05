@@ -3,7 +3,7 @@ export type ProductType = {
     attributes: {
         productName: string;
         slug: string;
-        description: string;
+        decription: string;
         active: boolean;
         isFeatured: boolean;
         taste: string;
