@@ -6,9 +6,11 @@ import MenuList from "./menu-list"
 import ItemsMenuMobile from "./items-menu-mobile"
 import ToggleTheme from "./toggle-theme"
 import { useCart } from "@/hooks/use-cart"
+import { useLovedProducts } from "@/hooks/use-loved-products"
 const Navbar = () => {
     const router = useRouter()
     const cart = useCart()
+    const {lovedItems} = useLovedProducts()
     return(
         <div className="flex items-center justify-between p-4 mx-auto cursor-pointer sm:max">
             <h1 className="text-3xl "onClick={() => router.push("/")}>Caffe
@@ -33,7 +35,7 @@ const Navbar = () => {
 
                 }
                 
-                <Heart className="cursor-pointer "  onClick={() => router.push("/love-products")}/>
+                <Heart className={`cursor-pointer ${lovedItems.length > 0 && 'fill-black dark:fill-white' }` } onClick={() => router.push("/loved-products")}/>
                 <User strokeWidth={1} className="cursor-pointer"/>
                 <ToggleTheme />
 

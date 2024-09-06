@@ -5,7 +5,7 @@ const BannerProduct = () => {
     <>
   <div className="mt-4 text-center">
     <p>Sumergete en una experiencia unica</p>
-    <h4 className="mt-2 text-5xl font-extrabold uppercase">CafeExquisito</h4>
+    <h4 className="mt-2 text-5xl font-extrabold uppercase">Cafe Exquisito</h4>
     <p className="my-2 text-lg">Despierta tus sentidos con cada sabor</p>
     <Link href="#" className={buttonVariants()}>Comprar</Link>
   </div>
