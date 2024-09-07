@@ -10,6 +10,7 @@ const BannerProduct = () => {
     <Link href="#" className={buttonVariants()}>Comprar</Link>
   </div>
   <div className="h-[350px] bg-cover lg:h-[900px] bg-[url('/ingbaner.jpg')] bg-center mt-5" />
+  
   </>
   )
 }
