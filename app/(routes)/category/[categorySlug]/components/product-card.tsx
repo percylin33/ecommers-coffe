@@ -30,7 +30,7 @@ const ProductCard = (props: ProductCardProps) => {
             <CarouselContent>
                 {product.attributes.images.data.map((image) => (
                     <CarouselItem key={image.id} className="group">
-                        <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${image.attributes.url}`} alt="image" className="rounded-xl"/>
+                        <img src={`${image.attributes.url}`} alt="image" className="rounded-xl"/>
                         <div className="absolute w-full px-6 transition duration-200 opacity-0 group-hover:opacity-100 bottom-5">
                             <div className="flex justify-center gap-x-6">
                                 <IconButton onClick={() => router.push(`/product/${product.attributes.slug}`)} icon={<Expand size={20} className="text-gray-600"/> } />
