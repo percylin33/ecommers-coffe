@@ -9,7 +9,7 @@ import NextTopLoader from "nextjs-toploader"
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Percy que es E-commerce",
+  title: "CafeNatura E-commerce",
   description: "welcome to my e-commerce from Percy",
 };
 
