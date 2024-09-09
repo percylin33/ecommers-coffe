@@ -28,7 +28,7 @@ const MenuList = () => {
                 <NavigationMenuLink asChild>
                   <a
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
+                    href="/#campo"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
                       Caffe del campo
@@ -39,13 +39,11 @@ const MenuList = () => {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/shop" title="tienda">
-                Accede a toda tu informacion, pedidosy mucho mas.
-              </ListItem>
-              <ListItem href="/ofertas " title="Ofertas">
+              
+              <ListItem href="/#banner-discount" title="Ofertas">
                 Secion dedicada a promociones y descuentos especiales.
               </ListItem>
-              <ListItem href="/" title="Accesorios">
+              <ListItem href="/#ex" title="Accesorios">
                 Productos Complementarios como tazas, molinillos, prensas, etc.
               </ListItem>
             </ul>
@@ -68,7 +66,7 @@ const MenuList = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/accesorios" legacyBehavior passHref>
+          <Link href="/#ex" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Accesorios
             </NavigationMenuLink>
@@ -84,19 +82,19 @@ export default MenuList
 const components: { title: string; href: string; description: string }[] = [
     {
       title: "Caffe en grano",
-      href: "/docs/primitives/alert-dialog",
+      href: "/category/grano",
       description:
         "A modal dialog that interrupts the user with important content and expects a response.",
     },
     {
       title: "Caffe en molido",
-      href: "/docs/primitives/hover-card",
+      href: "/category/molido",
       description:
         "For sighted users to preview content available behind a link.",
     },
     {
       title: "Caffe de capsula",
-      href: "/docs/primitives/progress",
+      href: "/category/capsula",
       description:
         "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     }

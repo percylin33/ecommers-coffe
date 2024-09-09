@@ -10,7 +10,7 @@ export default function Home() {
     <main >
       <CarrouselTextBanner />
       <FeaturedProducts />
-      <BannerDiscount />
+      <BannerDiscount id="banner-discount" />
       <ChooseCategory />
       <BannerProduct />
     </main>

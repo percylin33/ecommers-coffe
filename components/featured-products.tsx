@@ -17,6 +17,8 @@ const FeaturedProducts = () => {
 
   const router = useRouter();
   const {addItem} = useCart()
+
+  
   
   return (
   <div className=" max-w-6xl py-4 mx-auto sm:py-10 sm:px-24">
@@ -37,7 +39,7 @@ const FeaturedProducts = () => {
                 <Card className="py-4 border border-gray-200 shadow-none">
                   <CardContent className="relative flex items-center justify-center px-6 py-2">
                     <img 
-                    src={`${images.data[0].attributes.url}`} alt="image featured" 
+                    src={`${images.data[0].attributes.url}`} alt="image featured" className="rounded-md" 
                     />
                     <div className="absolute w-full px-6 transition duration-200 opacity-0 group-hover:opacity-100 bottom-5">
                       <div className="flex justify-center gap-x-6">
